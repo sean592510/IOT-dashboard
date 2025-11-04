@@ -1,4 +1,4 @@
-/* Reset & Base */
+
 * {
   margin: 0;
   padding: 0;
@@ -80,7 +80,6 @@ body {
   justify-content: flex-end;
 }
 
-/* PULP FICTION QUOTE SECTION */
 #quote {
   flex-direction: column;
   align-items: center;
@@ -109,8 +108,6 @@ body {
   opacity: 0.9;
   font-style: italic;
 }
-
-/* Responsive */
 @media (max-width: 600px) {
   #container { padding: 16px; }
   .info { font-size: 0.95rem; }
