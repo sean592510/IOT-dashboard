@@ -44,7 +44,7 @@
     .weather-temp { font-size:2rem; font-weight:bold; margin:0 8px; }
     .weather-city { font-size:1rem; opacity:0.9; }
     #author { font-style:italic; font-size:0.9rem; opacity:0.8; justify-content:flex-end; }
-    /* Pulp Fiction Quote */
+    
     #quote {
       flex-direction:column; align-items:center; text-align:center; padding:20px;
       background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
@@ -73,7 +73,7 @@
 
   <script>
     (async () => {
-      // Background
+    
       try {
         const res = await fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature");
         if (!res.ok) throw 1;
@@ -85,8 +85,7 @@
         document.getElementById("author").textContent = "By: Dodi Achmad";
       }
 
-      // Crypto
-      try {
+          try {
         const res = await fetch("https://api.coingecko.com/api/v3/coins/dogecoin");
         if (!res.ok) throw 1;
         const d = await res.json();
@@ -99,8 +98,6 @@
       } catch {
         document.getElementById("crypto").innerHTML = "<p>Crypto unavailable</p>";
       }
-
-      // Pulp Fiction Quotes
       const quotes = [
         { text: "Say 'what' again. I dare you. I double-dare you.", character: "Jules Winnfield" },
         { text: "I'm gonna get medieval on your ass.", character: "Marsellus Wallace" },
@@ -123,7 +120,6 @@
       updateQuote();
       setInterval(updateQuote, 20000);
 
-      // Clock
       const clock = () => {
         const n = new Date();
         document.getElementById("time").textContent = n.toLocaleTimeString("en-us", {timeStyle:"short"});
@@ -131,7 +127,6 @@
       clock();
       setInterval(clock, 1000);
 
-      // Weather
       navigator.geolocation.getCurrentPosition(async pos => {
         try {
           const {latitude, longitude} = pos.coords;
