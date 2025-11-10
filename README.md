@@ -1,5 +1,5 @@
 # IOT-dashboard
-# Pulp Fiction Dashboard
+# Digital Dashboard
 
 A sleek, modern dashboard featuring:
 
