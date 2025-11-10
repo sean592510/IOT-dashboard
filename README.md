@@ -23,7 +23,7 @@ A sleek, modern dashboard featuring:
 
 ---
 
-## Tech Stack
+### Tech Stack
 
 - HTML5
 - CSS3 (Glassmorphism + Flexbox)
