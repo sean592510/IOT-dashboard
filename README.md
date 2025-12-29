@@ -3,10 +3,10 @@
 
 A sleek, modern dashboard featuring:
 
-- **Random nature background** (Unsplash)
-- **Dogecoin price** (CoinGecko)
+- **Random nature background** 
+- **Dogecoin price** 
 - **Live clock**
-- **Local weather** (OpenWeatherMap via Scrimba)
+- **Local weather** 
 - **Rotating Pulp Fiction quotes** with natural background
 
 ---
